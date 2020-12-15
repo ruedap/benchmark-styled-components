@@ -6,7 +6,7 @@ const App3 = () => {
   return (
       <ul>
         { items.map((number, index) =>
-          <Li key={index}>
+          <Li key={index} style={{ left: index}}>
             { number }
           </Li>
         ) }
@@ -17,5 +17,5 @@ const App3 = () => {
 export default App3
 
 const Li = styled.li(() => css`
-  list-style: none
+  list-style: none;
 `)

@@ -6,7 +6,7 @@ const App2 = () => {
   return (
       <ul>
         { items.map((number, index) =>
-          <Li key={index}>
+          <Li key={index} style={{ left: index}}>
             { number }
           </Li>
         ) }
@@ -17,5 +17,5 @@ const App2 = () => {
 export default App2
 
 const Li = styled.li`
-  list-style: none
+  list-style: none;
 `
