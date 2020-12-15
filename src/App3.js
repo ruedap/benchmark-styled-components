@@ -1,8 +1,8 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
 const items = Array(1000).fill(99)
 
-const App2 = () => {
+const App3 = () => {
   return (
       <ul>
         { items.map((number, index) =>
@@ -14,8 +14,8 @@ const App2 = () => {
   )
 }
 
-export default App2
+export default App3
 
-const Li = styled.li`
+const Li = styled.li(() => css`
   list-style: none
-`
+`)
