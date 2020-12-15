@@ -4,7 +4,7 @@ const App1 = () => {
   return (
       <ul>
         { items.map((number, index) =>
-          <li key={index}>
+          <li key={index} style={ {listStyle: 'none'} }>
             { number }
           </li>
         ) }
