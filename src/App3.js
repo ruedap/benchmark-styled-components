@@ -4,13 +4,13 @@ const items = Array(1000).fill(99)
 
 const App3 = () => {
   return (
-      <ul>
-        { items.map((number, index) =>
-          <Li key={index} style={{ left: index}}>
-            { number }
-          </Li>
-        ) }
-      </ul>
+    <ul>
+      { items.map((number, index) =>
+        <Li key={index} style={{ left: index}}>
+          { number }
+        </Li>
+      ) }
+    </ul>
   )
 }
 
